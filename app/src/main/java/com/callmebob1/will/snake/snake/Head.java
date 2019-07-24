@@ -2,17 +2,19 @@ package com.callmebob1.will.snake.snake;
 
 public class Head extends Body {
 
-    enum Facing {
+    public enum Facing {
         UP,
         DOWN,
         LEFT,
         RIGHT
     }
 
-    private Facing direction = Facing.UP;
+    public Facing direction = Facing.UP;
 
-    public Head(Body next) {
+    public Head(int x, int y) {
         super(null);
+        this.x = x;
+        this.y = y;
     }
 
     @Override
